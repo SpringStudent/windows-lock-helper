@@ -1,0 +1,1 @@
+该仓库的目的是以脚本方式启动remote-desktop-control，解决windows锁屏场景下无法抓图和模拟鼠标键盘事件问题
