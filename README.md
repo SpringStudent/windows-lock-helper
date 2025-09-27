@@ -6,3 +6,9 @@
 ### 怎么用
 
 替换自己编译好的RemoteClient.jar并且修改RemoteClientStartJart.bat脚本的jar路径；然后以超管权限运行RemoteClientStartUp.bat即可启动程序！
+
+### Q&A
+
+* 服务启动失败
+
+检查是否安装VC_redist.x64.exe
