@@ -11,7 +11,7 @@
 
 * 服务启动失败
 
-检查是否安装VC_redist.x64.exe
+先安装VC_redist.x64.exe
 
 * 粘贴板不可用
 
