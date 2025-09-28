@@ -1,1 +1,0 @@
-java -jar C:\windows-lock-helper\RemoteClient.jar

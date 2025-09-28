@@ -11,8 +11,8 @@ sc stop RemoteClientService
 
 sc delete RemoteClientService
 
-echo sc create RemoteClientService binPath= "\"%~dp0RemoteClientService.exe\" --exepath=\"%~dp0RemoteClientStartJart.bat\" %args%" start= auto
+echo sc create RemoteClientService binPath= "\"%~dp0RemoteClientService.exe\" --exepath=\"%~dp0RemoteClientStartJar.bat\" %args%" start= auto
 
-sc create RemoteClientService binPath= "\"%~dp0RemoteClientService.exe\" --exepath=\"%~dp0RemoteClientStartJart.bat\" %args%" start= auto
+sc create RemoteClientService binPath= "\"%~dp0RemoteClientService.exe\" --exepath=\"%~dp0RemoteClientStartJar.bat\" %args%" start= auto
 
 sc start RemoteClientService
