@@ -1,3 +1,6 @@
+[English](README.md) | [中文](README_zh.md)
+
+
 ### File Description
 * RemoteClientStartUp.bat - The actual startup script, requires Administrator privileges to run
 * RemoteClientStartJar.bat - Batch script that starts the JAR file

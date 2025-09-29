@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README_zh.md)
+
 ### 文件说明
 * RemoteClientStartUp.bat  真正的启动脚本，需要以超管权限启动
 * RemoteClientStartJar.bat 启动jar的bat脚本
