@@ -21,5 +21,5 @@ if "!PORT!"=="" (
 )
 
 echo ×îÖÕ¶Ë¿Ú: !PORT!
-javaw -jar -DrobotPort=!PORT! "%~dp0RobotsServer.jar" 
+start "" javaw -jar -DrobotPort=!PORT! "%~dp0RobotsServer.jar" 
 exit
