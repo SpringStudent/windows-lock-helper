@@ -15,3 +15,7 @@
 * 服务启动失败
 
 先安装VC_redist.x64.exe
+
+* 鼠标键盘事件不可用
+
+建议关闭360，这玩意会拦截RemoteClient.jar的Robot鼠标事件模拟
