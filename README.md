@@ -1,6 +1,5 @@
 [English](README.md) | [中文](README_zh.md)
 
-### 拉取最新的https://github.com/SpringStudent/remote-desktop-control 代码，切换到feature_seperate_robot分支尝试
 
 ### 文件说明
 * Start.bat  真正的启动脚本，需要以超管权限启动
@@ -20,4 +19,4 @@
 
 * 鼠标键盘事件不可用
 
-建议关闭360，这玩意会拦截RemoteClient.jar的Robot鼠标事件模拟，导致我排查了一夜，擦
+貌似
