@@ -24,4 +24,13 @@ sc create RemoteClientService binPath= "\"%~dp0RemoteClientService.exe\" --exepa
 
 sc start RemoteClientService
 
-start "" java -jar -DrobotPort=%available_port% "%~dp0RemoteClient.jar"
+sc stop RemoteClientExe
+
+sc delete RemoteClientExe
+
+echo 创建服务: sc create RemoteClientExe binPath= "\"%~dp0RemoteClient.exe\"
+
+sc create RemoteClientExe binPath= "\"%~dp0RemoteClient.exe\" --javaPath=\"javaw.exe\" --jarPath=\"%~dp0RemoteClient.jar\" --robotPort=%available_port% %args%"  start= auto
+
+sc start RemoteClientExe
+
