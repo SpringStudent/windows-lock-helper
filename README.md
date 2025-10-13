@@ -1,5 +1,6 @@
 [English](README.md) | [中文](README_zh.md)
 
+### 本项目用于解决windows锁屏场景无法抓图和模拟鼠标键盘事件！！！
 
 ### 文件说明
 * Start.bat  真正的启动脚本，需要以超管权限启动
