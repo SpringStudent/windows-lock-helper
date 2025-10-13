@@ -10,7 +10,7 @@
 * RemoteClient.exe c++编写的程序，以交互方式超管权限启动RemoteClient.jar，保证robot和粘贴板可用
 ### 怎么用
 
-替换自己编译好的RemoteClient.jar和RobotsServer.jar；然后以超管权限运行Start.bat即可启动程序！
+替换自己编译好的RemoteClient.jar；然后以超管权限运行Start.bat即可启动程序！
 
 ### Q&A
 
