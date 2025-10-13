@@ -5,6 +5,15 @@ if "%*"=="" (
   echo 请输入参数，例如: registerService.bat --ppp=123 --abc=456
 )
 
+echo 正在尝试关闭已有的 RobotsServer.jar 进程...
+
+for /f "tokens=2 delims=," %%a in ('tasklist /FI "IMAGENAME eq javaw.exe" /FO CSV /NH') do (
+    for /f "tokens=*" %%b in ('wmic process where "ProcessId=%%~a" get CommandLine /value 2^>nul ^| findstr /i "RobotsServer.jar"') do (
+        echo 找到旧进程 PID=%%~a，正在结束...
+        taskkill /PID %%~a /F >nul 2>nul
+    )
+)
+
 set args=%*
 
 REM 获取可用端口
