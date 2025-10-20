@@ -39,7 +39,7 @@ sc delete RemoteClientExe
 
 echo 创建服务: sc create RemoteClientExe binPath= "\"%~dp0RemoteClient.exe\"
 
-sc create RemoteClientExe binPath= "\"%~dp0RemoteClient.exe\" --javaPath=\"java.exe\" --jarPath=\"%~dp0RemoteClient.jar\" --configFile=\"%~dp0Config.properties\" --robotPort=%available_port% %args%"  start= auto
+sc create RemoteClientExe binPath= "\"%~dp0RemoteClient.exe\" --javaPath=\"javaw.exe\" --jarPath=\"%~dp0RemoteClient.jar\" --configFile=\"%~dp0Config.properties\" --robotPort=%available_port% %args%"  start= auto
 
 sc start RemoteClientExe
 
