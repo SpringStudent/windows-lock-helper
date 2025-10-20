@@ -1,22 +1,22 @@
 [English](README.md) | [中文](README_zh.md)
 
-### 本项目用于解决windows锁屏场景无法抓图和模拟鼠标键盘事件！！！
+### This project is designed to solve the inability to capture screens and simulate mouse/keyboard events on the Windows lock screen!
 
 ### 文件说明
-* Start.bat  真正的启动脚本，需要以超管权限启动
-* RobotsServer.bat 启动RobotsServer.jar的脚本
-* RemoteClientService.exe 服务注册exe，负责复制winlogon的token，然后以System权限通过RobotsServer.bat启动RobotsServer.jar,保证锁屏截图和鼠标键盘事件正常执行
-* RemoteClient.jar 远程桌面控制jar，用户权限用户界面客户端程序，以用户权限启动保证用户session下粘贴板、鼠标、键盘事件的执行，锁屏时发送指令到RobotsServer保证锁屏可用，编译client项目的产出物
-* RobotsServer.jar 用于通过JNA调用C++开发DLL，用于windows锁屏场景抓图、模拟键盘和鼠标事件服务，需要以系统System权限启动的服务，编译robots项目的产出物
-* RemoteClient.exe c++编写的程序，以交互方式超管权限启动RemoteClient.jar，保证robot和粘贴板可用
-* Config.properties 客户端配置文件
-### 怎么用
+* Start.bat The actual startup script, which needs to be run with Administrator privileges.
+* RobotsServer.bat The script to launch RobotsServer.jar
+* RemoteClientService.exe A service registration executable responsible for duplicating the winlogon token and then launching RobotsServer.jar via RobotsServer.bat with System privileges, ensuring proper execution of lock screen capture and mouse/keyboard events.
+* RemoteClient.jar The remote desktop control JAR, a client program running with user privileges and a user interface. It starts with user privileges to ensure the execution of clipboard, mouse, and keyboard events within the user session. It sends commands to RobotsServer during lock screen to maintain functionality. This is the build output from the client project.
+* RobotsServer.jar Used to call a C++ developed DLL via JNA for capturing the Windows lock screen and simulating keyboard/mouse events. This service needs to be started with System privileges. This is the build output from the robots project.
+* RemoteClient.exe A program written in C++ that launches RemoteClient.jar interactively with Administrator privileges, ensuring Robot and clipboard functionality.
+* Config.properties Configuration file for the client connection port and address.
+### How to Use
 
-修改Config.properties配置文件中自己部署的服务地址信息；然后以超管权限运行Start.bat即可启动程序！
+Modify the server address information in the Config.properties configuration file according to your deployment. Then, run Start.bat with Administrator privileges to start the program!
 
 ### Q&A
 
-* 服务启动失败
+* Service fails to start?
 
-先安装VC_redist.x64.exe
+ install VC_redist.x64.exe.
 
