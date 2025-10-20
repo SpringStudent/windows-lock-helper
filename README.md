@@ -2,7 +2,7 @@
 
 ### This project is designed to solve the inability to capture screens and simulate mouse/keyboard events on the Windows lock screen!
 
-### 文件说明
+### Project file
 * Start.bat The actual startup script, which needs to be run with Administrator privileges.
 * RobotsServer.bat The script to launch RobotsServer.jar
 * RemoteClientService.exe A service registration executable responsible for duplicating the winlogon token and then launching RobotsServer.jar via RobotsServer.bat with System privileges, ensuring proper execution of lock screen capture and mouse/keyboard events.
